@@ -2,30 +2,118 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+input {
+  display: block;
+}
+
+.track-card {
+  display: flex;
+  border-radius: 5px;
+  border: solid 1px rgb(194, 194, 194);
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.track-artist,
+.track-name {
+  padding: 0 5px 5px 5px;
+}
+
+.track-artist {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+body {
+  margin: 20px;
+}
+
+#track-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.track-entry {
+  border: solid 1px gray;
+  padding: 10px;
+  width: 500px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.track-entry input {
+  padding: 5pt;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.track-entry label {
+  font-weight: bold;
+}
+
+#main {
+  display: none;
+}
+
+@media (width < 500px) {
+  #track-list {
+    flex-direction: column;
   }
-  * {
-    margin: 0;
+
+  .track-entry {
+    width: 250px;
+
   }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: sans-serif;
+
+  .track-card {
+    flex-direction: column;
+    width: 200px;
   }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
-  input {
-    display: block;
-  }
+}

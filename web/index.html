@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Web5Music</h1>
-    <section id="song-list"></section>
-    <form action="">
-        <div class="artist-card">
-            <label for="artist-name-1">Artist Name</label>
-            <input type="text" id="artist-name-1" placeholder="Artist Name">
-
-            <label for="artist-song-1">Artist Song</label>
-            <input type="text" id="artist-song-1" placeholder="Artist Song">
-        </div>
-        <button id="saveBtn">Save</button>
-        <img id="cover-art-1" height="200" width="200" />
-    </form>
-    <script type="module" src="app.js"></script>
+    <p id="loading-message">Please wait, loading...</p>
+    <section id="main">
+        <h2>Your Saved Music</h2>
+        <section id="track-list">
+        </section>
+        <h2>Add New Music to your Saved Music</h2>
+        <form id="track-entry-form">
+            <button id="saveBtn">Save</button>
+        </form>
+        <script type="module" src="app.js"></script>
+    </section>
 </body>
+
 </html>
