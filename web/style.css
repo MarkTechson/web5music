@@ -78,6 +78,7 @@ body {
 #track-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .track-entry {
@@ -100,6 +101,10 @@ body {
 
 #main {
   display: none;
+}
+
+hr {
+  margin-bottom: 20px;
 }
 
 @media (width < 500px) {
