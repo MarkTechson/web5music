@@ -1,13 +1,1 @@
-API Notes:
-- Getting started journey (API screen)
--- The instructions don't show you how to use it for the web
--- The instructions are the actual links to the code for the web, had to go to github.
-- API vs Getting started use two different statements about node usage
-- CDN link doesn't work so, why do we have one if cannot run this technology from the web?
-- Both CDN links are the same. Do we need to have both?
-- Images on developer site missing alt text
-- Put enough content out that web5 and block surface TBD
-- https://developer.tbd.website/api/web5-js/dwn/record
-  - What is the difference between record and records. The documentation says the exact same thing?
-- Query vs read? What is the logical flow between querying and reading with a dwn
-- Querying a 
+# Web5Music Application
